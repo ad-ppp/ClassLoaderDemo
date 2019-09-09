@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
 import com.xhb.classloader.helloandroid.ISayHello
+import dalvik.system.BaseDexClassLoader
 import dalvik.system.DexClassLoader
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         const val TAG = "MainActivity"
     }
 
-    var iSayHello: ISayHello? = null
+    private var iSayHello: ISayHello? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

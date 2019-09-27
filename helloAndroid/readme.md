@@ -13,6 +13,7 @@ bad class file magic (cafebabe) or version (0034.0000)
 修改如下： sourceCompatibility = 1.7，并且不用lambda表达式
 
 ## 使用方式
-- gradle :helloAndroid:jar 
+- gradle :helloAndroid:jar
+- gradle :helloAndroid:jar -PallInOne   // 打包第三方lib，到jar
 - java -jar ${jar的位置} "${参数1}" "${参数2}" ...
 

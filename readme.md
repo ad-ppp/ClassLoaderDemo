@@ -20,7 +20,6 @@
 2. ODEX 是什么文件，它有什么用
 3. Android 的ClassLoader是有哪个类主要处理
 
-
 ## 测试准备
 1. 将子模块 helloAndroid 生成的jar包，用dx工具生成包含 dex文件的jar包
 ```
@@ -31,7 +30,6 @@
 2. 将生成的 helloAndroid_dex.jar push 到 /sdcard/helloAndroid/helloAndroid_dex.jar
 `adb push ${helloAndroid_dex.jar path} /sdcard/helloAndroid/helloAndroid_dex.jar`
 3. 测试
-
 
 # 参考
 - [热修复入门：Android 中的 ClassLoader](https://jaeger.itscoder.com/android/2016/08/27/android-classloader.html)

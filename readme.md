@@ -2,6 +2,7 @@
 1. Execute code not installed as part of an application.
 2. 打包可执行 jar 程序，查看 /helloAndroid/readme.md
 3. A template of network classloader.
+4. Demo for alibaba 热修复框架---sophix
 
 ## Question ,如果回答不出，可以参考文末链接回答问题。
 #### Java VM
@@ -30,6 +31,9 @@
 2. 将生成的 helloAndroid_dex.jar push 到 /sdcard/helloAndroid/helloAndroid_dex.jar
 `adb push ${helloAndroid_dex.jar path} /sdcard/helloAndroid/helloAndroid_dex.jar`
 3. 测试
+4. 测试结果：
+a. 华为V10，Android 9.0 test pass
+b. 华为麦芒，Android 4.4 test fail-(Optimized data directory /storage/emulated/0/helloAndroid is not owned by the current user. Shared storage cannot protect your application from code injection attacks)
 
 # 参考
 - [热修复入门：Android 中的 ClassLoader](https://jaeger.itscoder.com/android/2016/08/27/android-classloader.html)

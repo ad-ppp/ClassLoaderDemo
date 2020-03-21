@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                 val odexDir = if (Build.VERSION.SDK_INT < 21) {
                     this@MainActivity.getDir("dex", 0)
                 } else {
-                    file
+                    this@MainActivity.codeCacheDir
                 }
 
                 val dexClassLoader =
